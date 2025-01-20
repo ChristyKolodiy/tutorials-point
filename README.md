@@ -8,7 +8,7 @@ This document outlines the basic structure and usage of a Selenide automation fr
 2. **Install Java 17 or higher:** Download and install Java 17(or higher) from the official Oracle website or use a suitable Java distribution.
 3. **Git:** Install Git from [https://git-scm.com/](https://git-scm.com/).
 4. **Maven:** Install Maven from [https://maven.apache.org/](https://maven.apache.org/).
-5. **Clone this repository:** `git clone <your-repository-url>`.
+5. **Clone this repository:** [https://github.com/ChristyKolodiy/tutorials-point](https://github.com/ChristyKolodiy/tutorials-point).
 
 
 **1. Introduction**
