@@ -15,7 +15,7 @@ public class CategoryMenuSection extends AbstractUIElement {
     }
 
     public <T> T openMenuItem(String menuItemName, Supplier<T> pageSupplier) {
-        $x(format("//a[text()='%s']", menuItemName)).shouldBe(visible).click();
+        $x(format(".//a[text()='%s']", menuItemName)).shouldBe(visible).click();
         return pageSupplier.get();
     }
 }
