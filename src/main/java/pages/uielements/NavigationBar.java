@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class NavigationBar extends AbstractUIElement {
 
-    private final SelenideElement categoryButton = $x(".//button[@aria-controls='category']");
+    private final SelenideElement categoryButton = $x("//button[@aria-controls='category']");
 
     private final SelenideElement categoriesTable = $("div.categories-menu > div > ul");
 
