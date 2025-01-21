@@ -3,18 +3,15 @@ package pages.uielements;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import pages.IDropdownMenu;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
-import static com.codeborne.selenide.Selenide.$$x;
-import static com.codeborne.selenide.Selenide.$x;
-
 public class CategoryDropDownMenu extends AbstractUIElement implements IDropdownMenu {
 
-    private final ElementsCollection menuCategories = $$x(".//li");
-    private final SelenideElement menuSection = $x(".//div[@class= 'categories-menu-sections-wrapper']");
+    private final ElementsCollection menuCategories = parentElement.$$("li");
+
+    private final SelenideElement menuSection = parentElement.$x(".//div[@class= 'categories-menu-sections-wrapper']");
 
     public CategoryDropDownMenu(SelenideElement parentElement) {
         super(parentElement);
